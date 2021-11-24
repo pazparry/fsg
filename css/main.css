@@ -12,7 +12,7 @@
 
 .titulo {
     color: #22a8da;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 3rem;
 }
 
@@ -79,8 +79,7 @@ header .overlay {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: 0.2;
+    background-color: rgba(0, 0, 0, 0.267);
     z-index: 1;
 }
 
@@ -308,12 +307,15 @@ footer a {
         background: #2b3236 url(../img/bg-vehiculo.jpg) no-repeat right 0;
     }
     .titulo {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .imagen-Carrusel {
         height: 100px;
         max-width: 100%;
         margin: 0 5%;
+    }
+    .container {
+        max-width: 1920px;
     }
 }
 
