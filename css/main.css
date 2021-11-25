@@ -153,8 +153,17 @@ header .overlay {
     border-radius: 0.3rem;
 }
 
-.bg-card {
+
+/* .bg-card {
     background-color: #003ea5;
+} */
+
+.celeste {
+    color: #4b9ab7;
+}
+
+.nuestros-img {
+    max-width: 200px;
 }
 
 
