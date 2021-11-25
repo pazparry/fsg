@@ -159,7 +159,7 @@ header .overlay {
 } */
 
 .celeste {
-    color: #4b9ab7;
+    color: #22a8da;
 }
 
 .nuestros-img {
@@ -167,7 +167,7 @@ header .overlay {
 }
 
 .coberturas-img {
-    max-width: 80px;
+    max-width: 50px;
 }
 
 
@@ -206,11 +206,11 @@ header .overlay {
 /*****ACERCA******/
 
 .acerca p span {
-    color: #4b9ab7;
+    color: #22a8da;
 }
 
 .acerca h3 {
-    color: #4b9ab7;
+    color: #22a8da;
 }
 
 .arrow-desktop {
@@ -222,15 +222,16 @@ header .overlay {
 }
 
 
-/*****CHOCADOS******/
+/*****seguros******/
 
-.chocados {
-    background: url(../img/bg-paisaje.jpg) no-repeat 0 0;
+.seguros {
+    background-color: rgba(0, 0, 0, 0.562);
+    background: url(../img/car-g54d62f8d6_1920.jpg) no-repeat 0 0;
     height: 495px;
 }
 
-.chocados h2,
-.chocados h3 {
+.seguros h2,
+.seguros h3 {
     font-size: 3rem;
 }
 
