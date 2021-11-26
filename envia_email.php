@@ -59,10 +59,11 @@ if ($jsonResponse->success === true) {
     $ano    = $_POST["ano"];
 
     //correo envío
-    $mymail  =  "abacompra@gmail.com";
-    $subject =  "Contacto ABA Chocados";
+    $mymail  =  "ifigenia.parry@gmail.com";
+    $subject =  "Contacto FSG Seguros";
     $mensaje =  "<html><body> ".
                 "Nombre: $nombre<br>" .
+                "RUT: $rut<br>"  .
                 "Email: $correo<br>" .
                 "Fono: $fono<br>" .
                 "Modelo: $modelo<br>" .
@@ -176,10 +177,10 @@ if ($jsonResponse->success === true) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo} - {$mail2->ErrorInfo}";
     }
 
-    echo "<script>alert('Gracias por su consulta! nos pondremos en contacto con usted a la brevedad'); window.location='https://autoschocados.cl/';</script>";
+    echo "<script>window.location='envio-exitoso.html';</script>";
 
 } else {
-    echo "<script>alert('Validación incorrecta'); window.location='https://autoschocados.cl/landing/';</script>";
+    echo "<script>alert('Validación incorrecta'); window.location='https://FGS.cl/landing/';</script>";
 }
 
 ?>
