@@ -28,10 +28,11 @@ if ($jsonResponse->success === true) {
     $email = $_POST["email"];
     
     
-    $mymail = "at.clientes@fsgseguros.cl";
+    $mymail1 = "at.clientes@fsgseguros.cl";
+    $mymail2 = "atencion.clientes@fsgseguros.cl";
     $header = "Content-Type: text/html;" . "\n";
     $header .= "From: FSG Seguros <no-reply@fsgseguros.cl>" . "\nReply-To:" . $_POST["email"] . "\n";
-    $header .= "Return-path:  at.clientes@fsgseguros.cl\r\n";
+    // $header .= "Return-path:  at.clientes@fsgseguros.cl\r\n";
     $header .= "X-Mailer:PHP/" . phpversion() . "\n";
     $header .= "Mime-Version: 1.0\n";
 
@@ -75,7 +76,8 @@ if ($jsonResponse->success === true) {
     $reply_to = $email;
     $reply_subj = "Gracias por contactarnos";
 
-    mail($mymail, $subject, $mensaje, $header);
+    mail($mymail1, $subject, $mensaje, $header);
+    mail($mymail2, $subject, $mensaje, $header);
     mail($reply_to, $reply_subj, $reply_msg, $reply_header);
 
     
