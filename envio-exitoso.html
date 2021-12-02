@@ -20,20 +20,23 @@
     <!--ICONO WASAP-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src='https://www.google.com/recaptcha/api.js?render=6LfAAcIbAAAAACMCSvtl1HYzD6KQ607u7N6w2zk5'>
-    </script>
+    <!--reCaptcha
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfW12gdAAAAABmAJp-KZvFgtgMMd5a9t9ddYY8V"></script>
     <script>
-        grecaptcha.ready(function() {
-            grecaptcha.execute('6LfAAcIbAAAAACMCSvtl1HYzD6KQ607u7N6w2zk5', {
-                    action: 'formulario'
-                })
-                .then(function(token) {
-                    var recaptchaResponse = document.getElementById('recaptchaResponse');
-                    recaptchaResponse.value = token;
+        $(document).ready(function() {
+            $('#enviar').click(function() {
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6LfW12gdAAAAABmAJp-KZvFgtgMMd5a9t9ddYY8V', {
+                        action: 'submit'
+                    }).then(function(token) {
+                        $('#form-contact').prepend('<input type="hidden" name="token" value = "' + token + '" > ');
+                        $('#form-contact').prepend('<input type="hidden" name="action" value = "submit" > ');
+                        $('#form-contact').submit();
+                    });
                 });
-        });
-    </script>
-
+            })
+        })
+    </script>-->
 
 
 </head>
@@ -150,7 +153,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-    <script src='https://www.google.com/recaptcha/api.js?render=6LfAAcIbAAAAACMCSvtl1HYzD6KQ607u7N6w2zk5'></script>
+    <!-- <script src='https://www.google.com/recaptcha/api.js?render=6LfAAcIbAAAAACMCSvtl1HYzD6KQ607u7N6w2zk5'></script> -->
 
 
     <script>
